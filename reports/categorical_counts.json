@@ -1,0 +1,59 @@
+{
+  "gender": {
+    "Female": 10034,
+    "Male": 9536,
+    "Other": 430
+  },
+  "marital_status": {
+    "Single": 9031,
+    "Married": 8974,
+    "Divorced": 1428,
+    "Widowed": 567
+  },
+  "education_level": {
+    "Bachelor's": 8045,
+    "High School": 5919,
+    "Master's": 3724,
+    "Other": 1508,
+    "PhD": 804
+  },
+  "employment_status": {
+    "Employed": 13007,
+    "Self-employed": 2923,
+    "Unemployed": 2113,
+    "Retired": 1176,
+    "Student": 781
+  },
+  "loan_purpose": {
+    "Debt consolidation": 7981,
+    "Other": 2550,
+    "Car": 2390,
+    "Home": 1972,
+    "Education": 1675,
+    "Business": 1629,
+    "Medical": 1196,
+    "Vacation": 607
+  },
+  "grade_subgrade": {
+    "C3": 1514,
+    "C4": 1463,
+    "C2": 1436,
+    "C5": 1422,
+    "C1": 1410,
+    "D1": 1155,
+    "D3": 1146,
+    "D4": 1100,
+    "D2": 1091,
+    "D5": 1073,
+    "B2": 654,
+    "B1": 620,
+    "B5": 604,
+    "B3": 599,
+    "B4": 598,
+    "E4": 378,
+    "E3": 346,
+    "F5": 340,
+    "E1": 337,
+    "E2": 321
+  }
+}

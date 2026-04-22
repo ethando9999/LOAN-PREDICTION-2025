@@ -1,0 +1,55 @@
+project:
+  name: loan-prediction-2025
+  random_seed: 42
+
+data:
+  kaggle_slug: nabihazahid/loan-prediction-dataset-2025
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  target_col: loan_paid_back
+  target_positive_is_default: false  # 1 = paid_back (good), 0 = default (bad) — sẽ flip trong pipeline
+  id_col: null
+
+split:
+  train_size: 0.70
+  val_size: 0.15
+  test_size: 0.15
+  stratify: true
+
+preprocessing:
+  missing:
+    method: iterative
+    estimator: bayesian_ridge
+    max_iter: 10
+  stat_tests:
+    chi2_alpha: 0.05
+    anova_alpha: 0.05
+  vif_threshold: 10.0  # tree models tolerant to multicollinearity; drop only extreme cases
+
+feature_engineering:
+  binning:
+    method: quantile
+    n_bins: 10
+  iv_min: 0.02
+  iv_preferred_range: [0.1, 0.5]
+
+models:
+  focal_lgbm:
+    alpha: 0.75
+    gamma: 2.0
+    num_leaves: 63
+    learning_rate: 0.05
+    n_estimators: 2000
+    min_child_samples: 20
+    reg_lambda: 1.0
+    early_stopping_rounds: 100
+
+optuna:
+  n_trials: 30
+  timeout_seconds: 1800
+  cv_folds: 5
+
+evaluation:
+  metrics: [pr_auc, roc_auc, gini, f2, ks, brier]
+  primary_metric: pr_auc

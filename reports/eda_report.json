@@ -1,0 +1,119 @@
+{
+  "shape": [
+    20000,
+    22
+  ],
+  "dtypes": {
+    "age": "int64",
+    "gender": "object",
+    "marital_status": "object",
+    "education_level": "object",
+    "annual_income": "float64",
+    "monthly_income": "float64",
+    "employment_status": "object",
+    "debt_to_income_ratio": "float64",
+    "credit_score": "int64",
+    "loan_amount": "float64",
+    "loan_purpose": "object",
+    "interest_rate": "float64",
+    "loan_term": "int64",
+    "installment": "float64",
+    "grade_subgrade": "object",
+    "num_of_open_accounts": "int64",
+    "total_credit_limit": "float64",
+    "current_balance": "float64",
+    "delinquency_history": "int64",
+    "public_records": "int64",
+    "num_of_delinquencies": "int64",
+    "loan_paid_back": "int64"
+  },
+  "missing": {
+    "age": 0,
+    "gender": 0,
+    "marital_status": 0,
+    "education_level": 0,
+    "annual_income": 0,
+    "monthly_income": 0,
+    "employment_status": 0,
+    "debt_to_income_ratio": 0,
+    "credit_score": 0,
+    "loan_amount": 0,
+    "loan_purpose": 0,
+    "interest_rate": 0,
+    "loan_term": 0,
+    "installment": 0,
+    "grade_subgrade": 0,
+    "num_of_open_accounts": 0,
+    "total_credit_limit": 0,
+    "current_balance": 0,
+    "delinquency_history": 0,
+    "public_records": 0,
+    "num_of_delinquencies": 0,
+    "loan_paid_back": 0
+  },
+  "class_balance": {
+    "counts": {
+      "1": 15998,
+      "0": 4002
+    },
+    "ratios": {
+      "1": 0.7999,
+      "0": 0.2001
+    },
+    "total": 20000
+  },
+  "feature_types": {
+    "all": [
+      "age",
+      "gender",
+      "marital_status",
+      "education_level",
+      "annual_income",
+      "monthly_income",
+      "employment_status",
+      "debt_to_income_ratio",
+      "credit_score",
+      "loan_amount",
+      "loan_purpose",
+      "interest_rate",
+      "loan_term",
+      "installment",
+      "grade_subgrade",
+      "num_of_open_accounts",
+      "total_credit_limit",
+      "current_balance",
+      "delinquency_history",
+      "public_records",
+      "num_of_delinquencies"
+    ],
+    "numeric": [
+      "age",
+      "annual_income",
+      "monthly_income",
+      "debt_to_income_ratio",
+      "credit_score",
+      "loan_amount",
+      "interest_rate",
+      "loan_term",
+      "installment",
+      "num_of_open_accounts",
+      "total_credit_limit",
+      "current_balance",
+      "delinquency_history",
+      "public_records",
+      "num_of_delinquencies"
+    ],
+    "categorical": [
+      "gender",
+      "marital_status",
+      "education_level",
+      "employment_status",
+      "loan_purpose",
+      "grade_subgrade"
+    ],
+    "low_cardinality_numeric": [
+      "loan_term",
+      "public_records"
+    ]
+  }
+}

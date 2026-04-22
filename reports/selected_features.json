@@ -1,0 +1,9 @@
+[
+  "employment_status",
+  "debt_to_income_ratio",
+  "credit_score",
+  "grade_subgrade",
+  "interest_rate",
+  "delinquency_history",
+  "num_of_delinquencies"
+]

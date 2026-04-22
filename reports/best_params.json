@@ -1,0 +1,13 @@
+{
+  "params": {
+    "num_leaves": 16,
+    "learning_rate": 0.11506408247250169,
+    "min_child_samples": 72,
+    "reg_lambda": 0.8241925264876453,
+    "feature_fraction": 0.9085081386743783,
+    "bagging_fraction": 0.6296178606936361,
+    "bagging_freq": 3
+  },
+  "alpha": 0.3253148886913343,
+  "gamma": 3.5208619905645775
+}
